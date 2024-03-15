@@ -25,9 +25,11 @@ header{
     color: white;
     padding: 10px 0;
     display: flex;
-    justify-content: flex-start ;
     align-items: center;
-    font-size: 15px;    
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 header img{
@@ -42,6 +44,7 @@ nav{
     padding: 10px;
     display: flex;
     overflow: hidden;
+
 }
 
 nav a{
@@ -96,14 +99,14 @@ nav a:hover {
     position: absolute;
     z-index: 10;
     left: 45%;
-    top: 115%;
+    top: 110%;
 }
 
 .imagemReyna{
     position: absolute;
     z-index: 10;
     left: 72%;
-    top: 107%;
+    top: 99%;
 }
 
 .imagemReyna, .imagemRaze{
@@ -171,6 +174,8 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Anta', sans-serif;
+    height: 10vh;
 }
 
 @media screen and (max-width: 1024px){
@@ -194,11 +199,6 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
     nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -210,7 +210,7 @@ footer p{
     }
     .imagemFundo h1 {
         font-size: 50px;
-        padding-top: 100px;
+        padding-top: 150px;
     }
 
     .sobre {
@@ -224,6 +224,12 @@ footer p{
         height: auto; 
         margin: 0 auto;
     }
+    .bntTopo {
+        right: 10px;
+        width: 20%;
+        font-size: 10px;
+    }
+    
 }
 /* Tela Armas*/
 
@@ -295,7 +301,7 @@ footer p{
 .conteudo {
     background-color: #FE4654;
     border-radius: 20px;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: 'Anta', sans-serif;
     width: 47%;
@@ -411,6 +417,7 @@ footer p{
 }
 
 @media (max-width: 480px) {
+    
     .armasNome, .nomeArmas, .sobreArmas p {
         font-size: 24px;
     }
@@ -423,7 +430,9 @@ footer p{
     .weapon-name {
         font-size: 16px;
     }
+
+    .imgfundo {
+        height: max-content;
+    }
 }
-
-
 
